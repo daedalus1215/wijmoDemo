@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+
+
+    <!-- Wijmo references (required) -->
+    <script src="http://cdn.wijmo.com/5.20163.254/controls/wijmo.min.js"></script>
+    <link href="http://cdn.wijmo.com/5.20163.254/styles/wijmo.min.css" rel="stylesheet"/>
+
+    <!-- Wijmo controls (optional, include the controls you need) -->
+    <script src="http://cdn.wijmo.com/5.20163.254/controls/wijmo.grid.min.js"></script>
+    <script src="http://cdn.wijmo.com/5.20163.254/controls/wijmo.chart.min.js"></script>
+    <script src="http://cdn.wijmo.com/5.20163.254/controls/wijmo.input.min.js"></script>
+    <script src="http://cdn.wijmo.com/5.20163.254/controls/wijmo.gauge.min.js"></script>
+
+    <script src="scripts/wijmo/wijmo.grid.filter.min.js"></script>
+
+
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="tabstrip">
+        <ul>
+            <li class="k-state-active">
+                <a href="">COB</a>
+            </li>
+            <li>
+                <a href="">WC</a>
+            </li>
+            <li>
+                <a href="">SUB</a>
+            </li>
+            <li>
+                <a href="">Overpayment</a>
+            </li>
+            <li>
+                <a href="">Other</a>
+            </li>
+            <li>
+                <a href="">Total</a>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+    <div id="filters">
+        <span id="analyst">
+            <span>Analysts:</span>
+            <div id="analystFilter"></div>
+        </span>
+
+        <span id="clientCode">
+            <span>Client Codes:</span>
+            <div id="clientCodeFilter"></div>
+        </span>
+
+        <span id="statuses">
+            <span>Statuses:</span>
+            <div id="statusFilter"></div>
+        </span>
+
+        <span id="types">
+            <span>Types:</span>
+            <div id="typeFilter"></div>
+        </span>
+    </div>
+
+
+
+
+    <div id="cases">
+        <div id="gettingStartGrid"></div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="scripts/tabs.js"></script>
+    <script src="scripts/filters.js"></script>
+    <script src="scripts/grid-case.js"></script>
+
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>
